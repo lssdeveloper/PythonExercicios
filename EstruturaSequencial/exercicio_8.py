@@ -13,10 +13,10 @@ e. = Salário Liquido : R$
 
 try:
     salario_por_hora = float(input('Quanto você ganha por hora ?'))
-    qtas_horas_por_dia = float(input('Quantas horas por dia ?'))
+    qtas_horas_por_mes = float(input('Quantas horas por mês ?'))
 except ValueError:
     print('Ops. Algo deu errado na entrada de dados! Informe um valor númerico válido.')
-salario_bruto = salario_por_hora * qtas_horas_por_dia
+salario_bruto = salario_por_hora * qtas_horas_por_mes
 ir = salario_bruto * (11/100)
 inss = salario_bruto * (8/100)
 sindicato = salario_bruto * (5/100)
@@ -25,12 +25,12 @@ descontos = ir + inss + sindicato
 
 salario_liquido = salario_bruto - descontos
 
-print('Seu salário bruto: %.2f' % salario_bruto)
-print('Seu salário líquido: %.2f' % salario_liquido)
-print('Seu desconto Imposto de Renda: %.2f' % ir)
-print('Seu desconto INSS: %.2f' % inss)
-print('Seu desconto sindicato: %.2f' % sindicato)
-print('Total de desconto: %.2f' % descontos)
+print('Seu salário bruto: R$ %.2f' % salario_bruto)
+print('Seu salário líquido: R$ %.2f' % salario_liquido)
+print('Seu desconto Imposto de Renda: R$ %.2f' % ir)
+print('Seu desconto INSS: R$ %.2f' % inss)
+print('Seu desconto sindicato: R$ %.2f' % sindicato)
+print('Total de desconto: R$ %.2f' % descontos)
 
 # 40.90 * 220 horas
 
